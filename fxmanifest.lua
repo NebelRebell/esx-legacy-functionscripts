@@ -1,4 +1,4 @@
-fx_version 'bodacious'
+fx_version 'bumped'
 game 'gta5'
 
 description 'ESX Legacy'
