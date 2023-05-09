@@ -1,22 +1,26 @@
-fx_version 'bumped'
+fx_version 'bodacious'
 game 'gta5'
+lua54 'yes'
 
-description 'ESX Legacy'
+author 'NebelRebell | Nebelbank.net'
+description 'ESX Legacy - Script'
 version '1.0.0'
 
 client_scripts {
-    'client/*',
-    'locales/*',
+    '@es_extended/locale.lua',
+    'client/*.lua',
 }
 
 server_scripts {
-    '@mysql-async/lib/MySQL.lua',
     '@es_extended/locale.lua',
-    'server/*'
+    'server/*.lua'
 }
 
 shared_scripts {
-    '@es_extended/imports.lua'
+    '@es_extended/imports.lua',
+    '@es_extended/locale.lua',
+    --'locales/de.lua',
+    --'config.lua'
 }
 
 dependencies {
